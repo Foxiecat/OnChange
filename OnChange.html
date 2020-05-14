@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <p>Ferdighet 2a - Alternative eventhandlere: onchange osv.</p>
+    <input type="text" ondblclick="testOnDblClick()" onkeydown="testOnKeyDown()" />
+    <h3 ondblclick="testOnDblClick()" oncontextmenu="testOnContextmenu()" >Test test test</h3>
+    <h2 id="info"></h2>
+
+    <a href="https://www.w3schools.com/jsref/dom_obj_event.asp">Mer informasjon her</a>
+    <script>
+        
+        function testOnContextmenu()
+        {
+            console.log('Context menu');
+        }
+
+        function testOnKeyDown()
+        {
+            console.log('Key is down');
+        }
+
+        function testOnDblClick()
+        {
+            console.log('Double Clicked');
+        }
+        
+    </script>
+</body>
+</html>
